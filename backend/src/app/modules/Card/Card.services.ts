@@ -46,38 +46,9 @@ const getAllCardFromDB = async (params: any) => {
 
   const result = await prisma.card.findMany({
     where: whereCondition,
-
-    orderBy:
-      sortBy && sortOrder
-        ? {
-            [sortBy]: sortOrder,
-          }
-        : {
-            createdAt: "desc",
-          },
-    select: {
-      id: true,
-      email: true,
-      role: true,
-      needPasswordChange: true,
-      status: true,
-      createdAt: true,
-      updatedAt: true,
-      admin: true,
-      patient: true,
-    },
   });
 
-  const totalCount = await prisma.user.count({
-    where: whereCondition,
-  });
   return {
-    meta: {
-      page,
-      limit,
-      totalCount,
-    },
-
     data: result,
   };
 };
