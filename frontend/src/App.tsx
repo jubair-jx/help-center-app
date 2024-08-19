@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className=" h-screen">
+      <main className=" h-full">
         <Hero />
       </main>
       <Footer />
