@@ -3,6 +3,14 @@ import { useGetAllCardQuery } from "../../redux/api/cardApi";
 import { useDebounce } from "../../redux/hooks";
 import Loading from "../ui/Loading";
 
+type CardType = {
+  id: string;
+  title: string;
+  description: string;
+  createdAt: string;
+  updatedAt: string;
+};
+
 const Hero = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const query: Record<string, unknown> = {};
@@ -52,7 +60,7 @@ const Hero = () => {
           <Loading />
         ) : (
           <>
-            {data?.data?.data?.map((card) => (
+            {data?.data?.data?.map((card: CardType) => (
               <div
                 key={card.id}
                 className=" min-h-52 cursor-pointer w-80 sm:w-96 border border-gray-400 shadow-md bg-gray-200 rounded-lg "
@@ -71,11 +79,11 @@ const Hero = () => {
           </>
         )}
         {isLoading ? (
-          <Loading />
+          <></>
         ) : (
           <>
             {data?.data?.data?.length === 0 && (
-              <div className="text-center col-span-12 text-gray-600">
+              <div className="text-center col-span-12 text-lg font-medium text-gray-600">
                 No cards found matching the search criteria. Please try
                 different search criteria
               </div>

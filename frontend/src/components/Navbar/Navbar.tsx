@@ -1,7 +1,5 @@
-import { useState } from "react";
-
 const NavBar = () => {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
   return (
     <>

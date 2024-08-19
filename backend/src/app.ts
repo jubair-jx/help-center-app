@@ -10,7 +10,7 @@ const app: Application = express();
 // CORS configuration
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173", "https://help-center-app.netlify.app"],
     credentials: true,
   })
 );

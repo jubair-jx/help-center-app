@@ -10,97 +10,106 @@ const Footer = () => {
                   Abstract
                 </h2>
 
-                <p className="mt-4 text-gray-300 text-sm font-Kanit">
+                <p className=" mt-1 text-gray-300 text-sm font-Kanit">
                   Join our community right now
                 </p>
               </div>
             </div>
 
             <div className="">
-              <p className="font-medium text-gray-200">Services</p>
+              <p className="font-semibold text-gray-100">Resources</p>
 
-              <ul className="mt-6 space-y-4 text-sm">
+              <ul className=" mt-2 text-sm space-y-2">
                 <li>
-                  <a className="text-gray-300 transition hover:opacity-75">
-                    {" "}
-                    1on1 Coaching{" "}
+                  <a className="text-gray-200 transition hover:opacity-75">
+                    Blog
                   </a>
                 </li>
 
                 <li>
-                  <a className="text-gray-300 transition hover:opacity-75">
-                    {" "}
-                    Company Review{" "}
+                  <a className="text-gray-200 transition hover:opacity-75">
+                    Help Center
                   </a>
                 </li>
 
                 <li>
-                  <a className="text-gray-300 transition hover:opacity-75">
-                    {" "}
-                    Accounts Review{" "}
+                  <a className="text-gray-200 transition hover:opacity-75">
+                    Release Notes
                   </a>
                 </li>
 
                 <li>
-                  <a className="text-gray-300 transition hover:opacity-75">
-                    {" "}
-                    HR Consulting{" "}
+                  <a className="text-gray-200 transition hover:opacity-75">
+                    Status
                   </a>
                 </li>
               </ul>
             </div>
 
             <div className="">
-              <p className="font-medium text-gray-200">Company</p>
+              <p className="font-semibold text-gray-100">Community</p>
 
-              <ul className="mt-6 space-y-4 text-sm">
+              <ul className="mt-2 space-y-2 text-sm">
                 <li>
-                  <a className="text-gray-300 transition hover:opacity-75">
+                  <a className="text-gray-200 transition hover:opacity-75">
                     {" "}
-                    About{" "}
+                    Twitter{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a className="text-gray-300 transition hover:opacity-75">
-                    {" "}
-                    Meet the Team{" "}
+                  <a className="text-gray-200 transition hover:opacity-75">
+                    Linkedin
                   </a>
                 </li>
 
                 <li>
-                  <a className="text-gray-300 transition hover:opacity-75">
-                    {" "}
-                    Accounts Review{" "}
+                  <a className="text-gray-200 transition hover:opacity-75">
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-200 transition hover:opacity-75">
+                    Dribble
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-200 transition hover:opacity-75">
+                    Podcast
                   </a>
                 </li>
               </ul>
             </div>
 
             <div className="">
-              <p className="font-medium text-gray-200">Helpful Links</p>
+              <p className=" text-gray-200 font-semibold">Company</p>
 
-              <ul className="mt-6 space-y-4 text-sm">
+              <ul className="mt-2 space-y-2 text-sm">
                 <li>
                   <a className="text-gray-300 transition hover:opacity-75">
-                    {" "}
-                    Contact{" "}
+                    About us
                   </a>
                 </li>
 
                 <li>
                   <a className="text-gray-300 transition hover:opacity-75">
-                    {" "}
-                    FAQs{" "}
+                    Carrers
                   </a>
                 </li>
 
                 <li>
                   <a className="text-gray-300 transition hover:opacity-75">
-                    {" "}
-                    Live Chat{" "}
+                    Legal
                   </a>
                 </li>
+                <li>
+                  <a className="text-gray-200 mt-4 font-semibold transition hover:opacity-75">
+                    Contact Us
+                  </a>
+                </li>
+                <a className="text-gray-300 mt-2 font-normal transition hover:opacity-75">
+                  info@abstract.com
+                </a>
               </ul>
             </div>
 
