@@ -2,7 +2,7 @@ import { baseApi } from "./baseApi";
 
 export const cardApi = baseApi.injectEndpoints({
   endpoints: (build) => ({
-    createFlat: build.mutation({
+    createCard: build.mutation({
       query: (cardData) => ({
         url: `/cards`,
         method: "POST",
@@ -10,7 +10,7 @@ export const cardApi = baseApi.injectEndpoints({
       }),
       invalidatesTags: ["Card"],
     }),
-    getAllFlats: build.query({
+    getAllCard: build.query({
       query: (arg: Record<string, unknown>) => ({
         url: `/cards`,
         method: "GET",
@@ -19,7 +19,7 @@ export const cardApi = baseApi.injectEndpoints({
       providesTags: ["Card"],
     }),
 
-    getFlatById: build.query({
+    getCardBytitle: build.query({
       query: (title: string) => ({
         url: `/cards/${title}`,
         method: "GET",
@@ -30,8 +30,7 @@ export const cardApi = baseApi.injectEndpoints({
 });
 
 export const {
-  useCreateFlatMutation,
-  useGetAllFlatsQuery,
-
-  useGetFlatByIdQuery,
+  useCreateCardMutation,
+  useGetAllCardQuery,
+  useGetCardBytitleQuery,
 } = cardApi;

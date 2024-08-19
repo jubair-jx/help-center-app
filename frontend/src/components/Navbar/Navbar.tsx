@@ -7,7 +7,7 @@ const NavBar = () => {
     <>
       <header className="sticky top-0 left-0 right-0 z-50 transition-all duration-300 ease-linear bg-gray-900  mx-auto lg:px-3 px-1">
         <div className="mx-auto px-4 sm:px-0">
-          <div className="flex justify-evenly items-center border-b-2 border-gray-100 py-4 lg:justify-start md:space-x-6">
+          <div className="flex justify-evenly items-center py-4 lg:justify-start md:space-x-6">
             <div className="flex justify-start items-center gap-x-2 lg:w-0 lg:flex-1 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
